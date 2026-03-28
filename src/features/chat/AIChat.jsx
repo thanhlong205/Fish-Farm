@@ -56,10 +56,10 @@ const AIChat = () => {
                                 </div>
                                 <div className="flex-1 min-w-0">
                                     <div className="flex justify-between items-center mb-1">
-                                        <h4 className="text-sm font-semibold truncate">BioAqua Global</h4>
+                                        <h4 className="text-sm font-semibold truncate">Duong Dinh</h4>
                                         <span className="text-[10px] text-slate-400">9:30 AM</span>
                                     </div>
-                                    <p className="text-xs text-slate-400 truncate">Confirmed, 200k Tilapia seeds shipping today.</p>
+                                    <p className="text-xs text-slate-400 truncate">Đã xác nhận, 200.000 hạt giống cá rô phi sẽ được vận chuyển hôm nay.</p>
                                 </div>
                             </div>
                             <div className="p-4 hover:bg-white dark:hover:bg-slate-800 transition-colors flex items-start space-x-3 cursor-pointer border-b border-primary/5">
@@ -68,10 +68,10 @@ const AIChat = () => {
                                 </div>
                                 <div className="flex-1 min-w-0">
                                     <div className="flex justify-between items-center mb-1">
-                                        <h4 className="text-sm font-semibold truncate">Nordic Seeds</h4>
+                                        <h4 className="text-sm font-semibold truncate">Viet Le</h4>
                                         <span className="text-[10px] text-slate-400">Yesterday</span>
                                     </div>
-                                    <p className="text-xs text-slate-400 truncate">Price update for Salmon Smolt has been applied.</p>
+                                    <p className="text-xs text-slate-400 truncate">Giá cá hồi con (Solmon Smolt) đã được cập nhật.</p>
                                 </div>
                             </div>
                             <div className="p-4 hover:bg-white dark:hover:bg-slate-800 transition-colors flex items-start space-x-3 cursor-pointer border-b border-primary/5">
@@ -80,10 +80,10 @@ const AIChat = () => {
                                 </div>
                                 <div className="flex-1 min-w-0">
                                     <div className="flex justify-between items-center mb-1">
-                                        <h4 className="text-sm font-semibold truncate">IndoShrimp Export</h4>
+                                        <h4 className="text-sm font-semibold truncate">Huynh Diep</h4>
                                         <span className="text-[10px] text-slate-400">Yesterday</span>
                                     </div>
-                                    <p className="text-xs text-slate-400 truncate">Are you interested in the new Vannamei breed?</p>
+                                    <p className="text-xs text-slate-400 truncate">Bạn có quan tâm đến giống Vannamei mới không?</p>
                                 </div>
                             </div>
                         </div>
@@ -96,7 +96,7 @@ const AIChat = () => {
                                     <span className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-white rounded-full"></span>
                                 </div>
                                 <div>
-                                    <h3 className="text-sm font-bold">Pacific Hatchery</h3>
+                                    <h3 className="text-sm font-bold">Le Van Cam</h3>
                                     <p className="text-[10px] text-slate-400 uppercase tracking-widest flex items-center">
                                         <span className="material-symbols-outlined text-[12px] mr-1 text-primary">verified</span>
                                         Verified Fish Supplier
@@ -128,7 +128,7 @@ const AIChat = () => {
                                 <img alt="Supplier" className="w-8 h-8 rounded-full shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5MkwnAzmmG-IcWpselqWlKoWXtaKTnBJMY5MAIsbo5GIQShA8Itxqw9xj5otHTmhzKZaoSr9VNx5s-UIIXs8Eq8IIY1doiRriuKdQOSHeBDcD8yRHtxA7WdLLopvLzw-KKtsRQD6M8L4AaIWek08jRs36QIhotAzfvK_5YSO6rE3u1qPJbWThRzGFqQ1Khaz9_sqpm3Fjajo06jHebcWRlpqzzkvhsPUOfP643MLpFHmYKiP5niPXlKwEm-ZR53r7nYulE0nWJRx6"/>
                                 <div>
                                     <div className="chat-bubble-receiver p-4 text-sm shadow-sm">
-                                        Hello Alex! I've updated the health monitoring stats for the White Leg Shrimp Batch #442. Would you like to review the latest AI analysis?
+                                        Chào Long! Tôi đã cập nhật số liệu thống kê giám sát sức khỏe cho lô tôm chân trắng số 442. Bạn có muốn xem lại phân tích AI mới nhất không?
                                     </div>
                                     <span className="text-[10px] text-slate-400 mt-1 ml-1">12:30 PM</span>
                                 </div>
@@ -137,7 +137,7 @@ const AIChat = () => {
                                 <img alt="You" className="w-8 h-8 rounded-full shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtWBEoX1WKeFB-bsE4NBbd1gaWtfcmFhh9DB1WZQmjJTVTdRCcjhHilRyeeXrqM2gYcLNq7U7mwHlqLLm9fBNm0DJ_QWgG2jhtG6TbV56vkrGYhBk523kAfh3EIOIXRV3ccc6sFgVQ65al1VkVWC7OvoVhjwEeuCfi0TJQ8Ot-LDeMdPS2ehH6m04cnV5CGD-9D4v8V64F0j_-Xy-X9q9_ws6YvT5lYBV_yccTRaXdXcJqtK6bJGw0JZd4D4WQsCpat1bD7be5SaEB"/>
                                 <div className="flex flex-col items-end">
                                     <div className="chat-bubble-sender p-4 text-sm shadow-sm font-medium">
-                                        Yes, please. I noticed the market price is fluctuating. Does the AI verify the current bid of $0.045 per PL?
+                                        Chào anh Cam! Cảm ơn anh đã cập nhật. Tôi rất muốn xem phân tích AI mới nhất để đảm bảo giá thầu của tôi vẫn cạnh tranh trên thị trường.
                                     </div>
                                     <div className="flex items-center justify-end mt-1 mr-1">
                                         <span className="text-[10px] text-slate-400">12:32 PM</span>
@@ -149,7 +149,7 @@ const AIChat = () => {
                                 <img alt="Supplier" className="w-8 h-8 rounded-full shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5MkwnAzmmG-IcWpselqWlKoWXtaKTnBJMY5MAIsbo5GIQShA8Itxqw9xj5otHTmhzKZaoSr9VNx5s-UIIXs8Eq8IIY1doiRriuKdQOSHeBDcD8yRHtxA7WdLLopvLzw-KKtsRQD6M8L4AaIWek08jRs36QIhotAzfvK_5YSO6rE3u1qPJbWThRzGFqQ1Khaz9_sqpm3Fjajo06jHebcWRlpqzzkvhsPUOfP643MLpFHmYKiP5niPXlKwEm-ZR53r7nYulE0nWJRx6"/>
                                 <div>
                                     <div className="chat-bubble-receiver p-4 text-sm shadow-sm">
-                                        Absolutely. Based on the 98% health score and current regional scarcity, $0.045 is actually 2% below the predicted value for next week. Here is the certificate.
+                                        Dưới đây là phân tích AI mới nhất cho lô tôm chân trắng số 442. Sức khỏe tổng thể được đánh giá là tốt với chỉ số 8.5/10, và giá thầu hiện tại của bạn là $0.045/con, được phân loại là OPTIMAL so với mức trung bình thị trường.
                                     </div>
                                     <div className="mt-2 bg-white p-2 rounded-xl border border-primary/10 shadow-sm max-w-[240px]">
                                         <img alt="Document Preview" className="rounded-lg mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5MkwnAzmmG-IcWpselqWlKoWXtaKTnBJMY5MAIsbo5GIQShA8Itxqw9xj5otHTmhzKZaoSr9VNx5s-UIIXs8Eq8IIY1doiRriuKdQOSHeBDcD8yRHtxA7WdLLopvLzw-KKtsRQD6M8L4AaIWek08jRs36QIhotAzfvK_5YSO6rE3u1qPJbWThRzGFqQ1Khaz9_sqpm3Fjajo06jHebcWRlpqzzkvhsPUOfP643MLpFHmYKiP5niPXlKwEm-ZR53r7nYulE0nWJRx6"/>
@@ -168,13 +168,13 @@ const AIChat = () => {
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div className="p-6 bg-white dark:bg-slate-900 border-t border-primary/5 shrink-0">
                             <div className="flex items-center space-x-4 bg-slate-50 dark:bg-slate-800 rounded-xl p-2 border border-primary/5">
                                 <button className="p-2 text-slate-400 hover:text-primary transition-colors">
                                     <span className="material-icons-outlined">add_circle_outline</span>
                                 </button>
-                                <input className="flex-1 bg-transparent border-none focus:ring-0 text-sm py-2 px-2" placeholder="Type your message or ask AI to verify a price..." type="text"/>
+                                <input className="flex-1 bg-transparent border-none focus:ring-0 text-sm py-2 px-2" placeholder="Nhập tin nhắn của bạn hoặc yêu cầu AI xác nhận giá..." type="text"/>
                                 <div className="flex items-center space-x-2">
                                     <button className="p-2 text-slate-400 hover:text-primary transition-colors">
                                         <span className="material-icons-outlined">sentiment_satisfied</span>
