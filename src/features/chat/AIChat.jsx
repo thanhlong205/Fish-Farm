@@ -168,6 +168,7 @@ const AIChat = () => {
                                 </div>
                             </div>
                         </div>
+                        
                         <div className="p-6 bg-white dark:bg-slate-900 border-t border-primary/5 shrink-0">
                             <div className="flex items-center space-x-4 bg-slate-50 dark:bg-slate-800 rounded-xl p-2 border border-primary/5">
                                 <button className="p-2 text-slate-400 hover:text-primary transition-colors">
