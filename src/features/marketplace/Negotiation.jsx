@@ -1,43 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Sidebar from '../../components/layout/Sidebar';
 
 const Negotiation = () => {
     return (
         <div className="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
-            {/* Navigation Header */}
-            <nav className="sticky top-0 z-[50] bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
-                <div className="max-w-[1600px] mx-auto px-6 h-16 flex items-center justify-between">
-                    <div className="flex items-center gap-8">
-                        <Link to="/" className="flex items-center gap-2">
-                            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                                <span className="material-icons text-background-dark text-xl">waves</span>
-                            </div>
-                            <span className="font-bold text-xl tracking-tight text-slate-800 dark:text-white">AquaTrade <span className="text-primary">AI</span></span>
-                        </Link>
-                        <div className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-500 dark:text-slate-400">
-                            <Link to="#" className="hover:text-primary transition-colors">Marketplace</Link>
-                            <Link to="/negotiation" className="text-slate-900 dark:text-white border-b-2 border-primary pt-1">Active Deals</Link>
-                            <Link to="#" className="hover:text-primary transition-colors">Inventory</Link>
-                            <Link to="#" className="hover:text-primary transition-colors">Analytics</Link>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-4">
-                        <button className="p-2 text-slate-400 hover:text-primary"><span className="material-icons">notifications</span></button>
-                        <div className="h-8 w-[1px] bg-slate-200 dark:bg-slate-800 mx-2"></div>
-                        <div className="flex items-center gap-3">
-                            <div className="text-right hidden sm:block">
-                                <p className="text-xs font-semibold">Pacific Prime Seafood</p>
-                                <p className="text-[10px] text-slate-500">Premium Buyer</p>
-                            </div>
-                            <div className="w-9 h-9 rounded-full bg-primary/20 flex items-center justify-center border border-primary/30">
-                                <span className="material-icons text-primary">account_circle</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+            {/* Shared Sidebar Component */}
+            <Sidebar />
 
-            <main className="max-w-[1600px] mx-auto p-6 h-[calc(100vh-64px)] pb-24">
+            <main className="lg:ml-64 w-full max-w-full p-6 h-screen pb-24 flex flex-col">
                 <div className="grid grid-cols-12 gap-6 h-full">
                     {/* Left Column: Product Analysis */}
                     <div className="col-span-12 lg:col-span-7 flex flex-col gap-6 overflow-y-auto custom-scrollbar pr-2 h-full">
@@ -286,7 +257,7 @@ const Negotiation = () => {
             </main>
 
             {/* Global Negotiation Footer */}
-            <div className="fixed bottom-0 left-0 w-full bg-background-dark text-white py-3 px-6 flex items-center justify-between z-[60] border-t border-slate-800">
+            <div className="fixed bottom-0 lg:left-64 left-0 w-[calc(100%-16rem)] max-lg:w-full bg-background-dark text-white py-3 px-6 flex items-center justify-between z-[60] border-t border-slate-800">
                 <div className="flex items-center gap-8">
                     <div className="flex flex-col">
                         <span className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Selected Item</span>
