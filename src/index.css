@@ -63,3 +63,14 @@ body {
 .chat-bubble-sender { background-color: #13ecc8; color: #10221f; border-radius: 1rem 1rem 0 1rem; }
 .chat-bubble-receiver { background-color: #f1f5f9; color: #334155; border-radius: 1rem 1rem 1rem 0; }
 .sidebar-item-active { border-right: 3px solid #13ecc8; background: rgba(19, 236, 200, 0.1); }
+
+@keyframes wobble {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+  75% { transform: rotate(-3deg); }
+}
+
+.animate-wobble {
+  animation: wobble 2.5s ease-in-out infinite;
+}

@@ -1,59 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Sidebar from '../../components/layout/Sidebar';
+import Footer from '../../components/layout/Footer';
 
 const Inventory = () => {
     return (
         <div className="bg-surface text-on-surface flex min-h-screen overflow-hidden font-display">
-            {/* SideNavBar (Shared Component) */}
-            <aside className="hidden lg:flex fixed left-0 top-0 h-full flex-col z-40 w-64 border-r border-cyan-500/10 bg-white dark:bg-slate-900 shadow-sm">
-                <div className="p-6 flex flex-col gap-1">
-                    <span className="text-xl font-bold tracking-tight text-slate-800 dark:text-white uppercase">AquaTrade <span className="text-primary text-sm font-medium">AI</span></span>
-                    <span className="text-[10px] uppercase tracking-widest text-slate-500 font-medium">Precision Logistics</span>
-                </div>
-                <nav className="flex-1 mt-4 px-2 space-y-1 custom-scrollbar overflow-y-auto">
-                    {/* Dashboard */}
-                    <Link className="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" to="/">
-                        <span className="material-icons-outlined">dashboard</span>
-                        <span className="text-[14px]">Dashboard</span>
-                    </Link>
-                    {/* Inventory (Active) */}
-                    <Link className="flex items-center gap-3 px-4 py-3 bg-cyan-50 dark:bg-cyan-900/20 text-cyan-600 dark:text-cyan-300 border-r-4 border-cyan-500 font-bold transition-all duration-150" to="/inventory">
-                        <span className="material-icons-outlined" style={{fontVariationSettings: "'FILL' 1"}}>inventory_2</span>
-                        <span className="text-[14px]">Inventory</span>
-                    </Link>
-                    {/* Orders */}
-                    <Link className="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" to="/orders">
-                        <span className="material-icons-outlined">shopping_cart</span>
-                        <span className="text-[14px]">Orders</span>
-                    </Link>
-                    {/* Market */}
-                    <Link className="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" to="/negotiation">
-                        <span className="material-icons-outlined">storefront</span>
-                        <span className="text-[14px]">Market</span>
-                    </Link>
-                    {/* Chat */}
-                    <Link className="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" to="/chat">
-                        <span className="material-icons-outlined">chat</span>
-                        <span className="text-[14px]">AI Chat</span>
-                    </Link>
-                    {/* AI Insights */}
-                    <Link className="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" to="/ai-detection">
-                        <span className="material-icons-outlined">psychology</span>
-                        <span className="text-[14px]">AI Insights</span>
-                    </Link>
-                    {/* Settings */}
-                    <Link className="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" to="#">
-                        <span className="material-icons-outlined">settings</span>
-                        <span className="text-[14px]">Settings</span>
-                    </Link>
-                </nav>
-                <div className="p-4 mt-auto">
-                    <button className="w-full bg-primary text-on-primary font-bold py-3 rounded-lg flex items-center justify-center gap-2 shadow-sm hover:opacity-90 transition-all">
-                        <span className="material-icons-outlined">add</span>
-                        <span>New Batch</span>
-                    </button>
-                </div>
-            </aside>
+            {/* Shared Sidebar Component */}
+            <Sidebar />
             {/* Main Content Area */}
             <main className="flex-1 lg:ml-64 flex flex-col h-screen overflow-hidden">
                 {/* TopAppBar (Shared Component) */}
@@ -333,16 +287,7 @@ const Inventory = () => {
                         </div>
                     </div>
                     {/* Footer (Shared Component) */}
-                    <footer className="w-full flex flex-col md:flex-row justify-between items-center px-0 py-8 mt-auto border-t border-cyan-500/5 bg-transparent">
-                        <div className="flex flex-col gap-2">
-                            <span className="text-sm font-bold text-slate-400">© 2024 Aqua Crystal AI Logistics. All rights reserved.</span>
-                        </div>
-                        <div className="flex gap-4 md:gap-8 mt-4 md:mt-0 flex-wrap justify-center">
-                            <Link className="text-[12px] uppercase tracking-widest text-slate-500 font-bold hover:text-cyan-500 transition-colors" to="#">Terms of Service</Link>
-                            <Link className="text-[12px] uppercase tracking-widest text-slate-500 font-bold hover:text-cyan-500 transition-colors" to="#">Privacy Policy</Link>
-                            <Link className="text-[12px] uppercase tracking-widest text-slate-500 font-bold hover:text-cyan-500 transition-colors" to="#">API Status</Link>
-                        </div>
-                    </footer>
+                  <Footer/>
                 </section>
             </main>
         </div>

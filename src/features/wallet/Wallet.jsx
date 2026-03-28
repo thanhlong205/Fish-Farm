@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Sidebar from '../../components/layout/Sidebar';
 import myLogo from '../../assets/IMG_2793 3.jpg';
+import Footer from '../../components/layout/Footer';
 
 const Wallet = () => {
     return (
@@ -315,16 +316,7 @@ const Wallet = () => {
                     </section>
 
                     {/* Footer Shell */}
-                    <footer className="flex flex-col md:flex-row justify-between items-center w-full py-12 mt-20 border-t border-cyan-500/5">
-                        <div className="mb-4 md:mb-0">
-                            <p className="font-sans text-[11px] tracking-widest uppercase font-bold text-slate-500">© 2024 AquaTrade AI. Laboratory Precision Logistics.</p>
-                        </div>
-                        <div className="flex gap-8">
-                            <Link className="font-sans text-[11px] tracking-widest uppercase text-slate-400 hover:text-cyan-500 hover:underline transition-all" to="#">Privacy Policy</Link>
-                            <Link className="font-sans text-[11px] tracking-widest uppercase text-slate-400 hover:text-cyan-500 hover:underline transition-all" to="#">Terms of Service</Link>
-                            <Link className="font-sans text-[11px] tracking-widest uppercase text-slate-400 hover:text-cyan-500 hover:underline transition-all" to="#">Support</Link>
-                        </div>
-                    </footer>
+                    <Footer/>
                 </main>
             </div>
         </div>
