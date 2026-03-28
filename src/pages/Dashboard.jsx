@@ -13,7 +13,7 @@ const Dashboard = () => {
     return (
         <div className="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-100 min-h-screen flex overflow-hidden">
             <Sidebar />
-            <main className="flex-1 ml-20 lg:ml-64 flex flex-col min-w-0 overflow-y-auto min-h-screen">
+            <main className="flex-1 lg:ml-64 flex flex-col min-w-0 overflow-y-auto min-h-screen">
                 <Header />
                 <div className="p-8 space-y-12">
                     <HeroSection />
