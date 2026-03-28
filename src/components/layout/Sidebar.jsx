@@ -12,6 +12,7 @@ const Sidebar = () => {
 
     const navItems = [
         { path: '/', label: 'Dashboard', icon: 'dashboard' },
+        { path: '/prices', label: 'Market Prices', icon: 'payments' },
         { path: '/marketplace', label: 'Marketplace', icon: 'storefront' },
         { path: '/ai-detection', label: 'Analytics', icon: 'insights' },
         { path: '/orders', label: 'Logistics', icon: 'local_shipping' },
@@ -38,10 +39,10 @@ const Sidebar = () => {
             </div>
 
             <div className="px-6 mb-8">
-                <button className="w-full py-3 px-4 bg-[#13ecc8] text-[#0a1a17] font-bold rounded-lg flex items-center justify-center gap-2 shadow-lg shadow-[#13ecc8]/20 hover:brightness-110 active:scale-95 transition-all">
+                <Link to="/marketplace" className="w-full py-3 px-4 bg-[#13ecc8] text-[#0a1a17] font-bold rounded-lg flex items-center justify-center gap-2 shadow-lg shadow-[#13ecc8]/20 hover:brightness-110 active:scale-95 transition-all">
                     <span className="material-symbols-outlined text-lg">add</span>
                     New Order
-                </button>
+                </Link>
             </div>
 
             <div className="flex-1 space-y-1 overflow-y-auto custom-scrollbar">
