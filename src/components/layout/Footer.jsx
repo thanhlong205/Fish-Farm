@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
             <div className="max-w-7xl mx-auto pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                 <div className="text-slate-400 text-[11px] font-medium uppercase tracking-widest">
-                    © 2024 AquaTrade AI Technologies. All Rights Reserved.
+                    © 2026 AquaTrade AI Technologies. All Rights Reserved.
                 </div>
                 <div className="flex items-center space-x-6">
                     <div className="flex items-center text-slate-400 text-xs font-medium cursor-pointer hover:text-primary transition-colors">
