@@ -1,55 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Sidebar from '../../components/layout/Sidebar';
 
 // Kiểm định chất lượng bằng AI,giao diện giám sát tự động
 const AIDetection = () => {
     return (
         <div className="font-display bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 min-h-screen flex">
             {/* Sidebar */}
-            <aside className="w-64 border-r border-primary/10 bg-white dark:bg-neutral-dark flex flex-col hidden lg:flex">
-                <div className="p-6 flex items-center gap-3">
-                    <Link to="/" className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                            <span className="material-icons text-white">waves</span>
-                        </div>
-                        <span className="font-bold text-xl tracking-tight">AquaTrade <span className="text-primary text-sm font-semibold">AI</span></span>
-                    </Link>
-                </div>
-                <nav className="flex-1 px-4 space-y-2 mt-4">
-                    <Link to="/" className="flex items-center gap-3 p-3 rounded-lg text-slate-500 hover:bg-primary/10 hover:text-primary transition-colors">
-                        <span className="material-icons">dashboard</span>
-                        <span className="font-medium text-sm">Tổng quan</span>
-                    </Link>
-                    <Link to="/ai-detection" className="flex items-center gap-3 p-3 rounded-lg bg-primary/10 text-primary transition-colors">
-                        <span className="material-icons">biotech</span>
-                        <span className="font-medium text-sm">Nhận diện AI</span>
-                    </Link>
-                    <Link to="#" className="flex items-center gap-3 p-3 rounded-lg text-slate-500 hover:bg-primary/10 hover:text-primary transition-colors">
-                        <span className="material-icons">inventory_2</span>
-                        <span className="font-medium text-sm">Kho hàng</span>
-                    </Link>
-                    <Link to="#" className="flex items-center gap-3 p-3 rounded-lg text-slate-500 hover:bg-primary/10 hover:text-primary transition-colors">
-                        <span className="material-icons">shopping_cart</span>
-                        <span className="font-medium text-sm">Đơn hàng</span>
-                    </Link>
-                    <Link to="#" className="flex items-center gap-3 p-3 rounded-lg text-slate-500 hover:bg-primary/10 hover:text-primary transition-colors">
-                        <span className="material-icons">analytics</span>
-                        <span className="font-medium text-sm">Báo cáo</span>
-                    </Link>
-                </nav>
-                <div className="p-4 border-t border-primary/10">
-                    <div className="bg-primary/5 rounded-xl p-4">
-                        <p className="text-xs text-slate-400 mb-2">Gói Pro AI</p>
-                        <div className="w-full bg-slate-200 dark:bg-slate-700 h-1 rounded-full mb-3">
-                            <div className="bg-primary h-1 rounded-full w-4/5"></div>
-                        </div>
-                        <p className="text-xs font-medium">8.420 / 10.000 quét</p>
-                    </div>
-                </div>
-            </aside>
+            <Sidebar />
 
             {/* Main Content */}
-            <main className="flex-1 flex flex-col">
+            <main className="flex-1 flex flex-col lg:ml-64 w-full overflow-hidden">
                 {/* Header */}
                 <header className="h-16 border-b border-primary/10 bg-white dark:bg-neutral-dark px-8 flex items-center justify-between">
                     <div className="flex items-center gap-4">
@@ -69,11 +30,13 @@ const AIDetection = () => {
                         </button>
                         <div className="flex items-center gap-3 pl-4 border-l border-primary/10">
                             <div className="text-right">
-                                <p className="text-xs font-bold">Lê Minh Tuân</p>
+                                <p className="text-xs font-bold">Ly Thanh Long</p>
                                 <p className="text-[10px] text-slate-400">Quản trị viên kho</p>
                             </div>
                             <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center">
-                                <span className="material-icons text-primary text-sm">person</span>
+                                <span className="material-icons text-primary text-sm">
+                                    <img src="" alt="" />
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -88,10 +51,10 @@ const AIDetection = () => {
                         </div>
                         <div className="flex gap-3">
                             <button className="flex items-center gap-2 px-4 py-2 border border-primary/20 rounded-lg text-sm font-medium hover:bg-primary/5 transition-colors">
-                                <span className="material-icons text-sm">settings_overscan</span> Cân chỉnh lại
+                                <span className="material-icons text-sm">Cân chỉnh lại</span> 
                             </button>
                             <button className="flex items-center gap-2 px-4 py-2 border border-primary/20 rounded-lg text-sm font-medium hover:bg-primary/5 transition-colors">
-                                <span className="material-icons text-sm">download</span> Xuất báo cáo
+                                <span className="material-icons text-sm">Xuất báo cáo</span> 
                             </button>
                         </div>
                     </div>
