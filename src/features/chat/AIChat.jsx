@@ -1,58 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Sidebar from '../../components/layout/Sidebar';
 
 const AIChat = () => {
     return (
         <div className="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-100 h-screen flex overflow-hidden">
-            <aside className="w-20 lg:w-64 border-r border-primary/10 bg-white dark:bg-background-dark h-screen flex flex-col transition-all duration-300 z-[50] shrink-0">
-                <div className="h-16 flex items-center px-6 border-b border-primary/5">
-                    <Link to="/" className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                        <span className="material-icons-outlined text-white text-xl">waves</span>
-                    </Link>
-                    <span className="ml-3 font-bold text-lg hidden lg:block tracking-tight">AquaTrade <span className="text-primary">AI</span></span>
-                </div>
-                <nav className="flex-1 py-6 overflow-y-auto custom-scrollbar">
-                    <ul className="space-y-2">
-                        <li>
-                            <Link className="flex items-center px-6 py-3 text-slate-500 hover:text-primary transition-colors" to="/">
-                                <span className="material-icons-outlined">dashboard</span>
-                                <span className="ml-4 font-medium hidden lg:block">Dashboard</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className="flex items-center px-6 py-3 text-slate-500 hover:text-primary transition-colors" to="/marketplace">
-                                <span className="material-icons-outlined">inventory_2</span>
-                                <span className="ml-4 font-medium hidden lg:block">Inventory</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className="flex items-center px-6 py-3 text-slate-500 hover:text-primary transition-colors" to="/orders">
-                                <span className="material-icons-outlined">shopping_bag</span>
-                                <span className="ml-4 font-medium hidden lg:block">Orders</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className="flex items-center px-6 py-3 sidebar-item-active text-primary" to="/chat">
-                                <span className="material-icons-outlined">chat_bubble_outline</span>
-                                <span className="ml-4 font-medium hidden lg:block">AI Assistant</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className="flex items-center px-6 py-3 text-slate-500 hover:text-primary transition-colors" to="/ai-detection">
-                                <span className="material-icons-outlined">analytics</span>
-                                <span className="ml-4 font-medium hidden lg:block">Insights</span>
-                            </Link>
-                        </li>
-                    </ul>
-                </nav>
-                <div className="p-6 mt-auto border-t border-primary/5">
-                    <Link className="flex items-center text-slate-500 hover:text-primary" to="#">
-                        <span className="material-icons-outlined">settings</span>
-                        <span className="ml-4 font-medium hidden lg:block">Account</span>
-                    </Link>
-                </div>
-            </aside>
-            <div className="flex-1 flex flex-col min-w-0 bg-white dark:bg-slate-900">
+            <Sidebar />
+            <div className="flex-1 flex flex-col min-w-0 bg-white dark:bg-slate-900 lg:ml-64 w-full">
                 <header className="h-16 bg-white dark:bg-slate-900 border-b border-primary/5 flex items-center justify-between px-6 shrink-0 z-10">
                     <div className="flex items-center">
                         <h2 className="text-lg font-bold mr-4">Messages</h2>
@@ -68,7 +22,7 @@ const AIChat = () => {
                         </button>
                         <div className="flex items-center space-x-3 border-l border-primary/10 pl-6">
                             <div className="text-right hidden sm:block">
-                                <p className="text-xs font-semibold">Alex Marin</p>
+                                <p className="text-xs font-semibold">Thanh Long</p>
                                 <p className="text-[10px] text-slate-400 uppercase tracking-widest">Premium Vendor</p>
                             </div>
                             <img alt="User Avatar" className="w-8 h-8 rounded-full border border-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtWBEoX1WKeFB-bsE4NBbd1gaWtfcmFhh9DB1WZQmjJTVTdRCcjhHilRyeeXrqM2gYcLNq7U7mwHlqLLm9fBNm0DJ_QWgG2jhtG6TbV56vkrGYhBk523kAfh3EIOIXRV3ccc6sFgVQ65al1VkVWC7OvoVhjwEeuCfi0TJQ8Ot-LDeMdPS2ehH6m04cnV5CGD-9D4v8V64F0j_-Xy-X9q9_ws6YvT5lYBV_yccTRaXdXcJqtK6bJGw0JZd4D4WQsCpat1bD7be5SaEB"/>
