@@ -1,51 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Sidebar from '../../components/layout/Sidebar';
 
 const OrderHistory = () => {
     return (
         <div className="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-100 min-h-screen">
             <div className="flex min-h-screen">
                 {/* Sidebar */}
-                <aside className="w-64 bg-white dark:bg-background-dark border-r border-slate-200 dark:border-slate-800 flex flex-col hidden lg:flex">
-                    <div className="p-6 flex items-center gap-3">
-                        <Link to="/" className="flex items-center gap-3">
-                            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                                <span className="material-icons text-white">waves</span>
-                            </div>
-                            <span className="font-bold text-xl tracking-tight">AquaTrade <span className="text-primary text-sm font-medium">AI</span></span>
-                        </Link>
-                    </div>
-                    <nav className="flex-1 px-4 space-y-1 mt-4">
-                        <Link to="/" className="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-500 hover:bg-primary/10 hover:text-primary transition-all">
-                            <span className="material-icons">dashboard</span>
-                            <span className="font-medium">Dashboard</span>
-                        </Link>
-                        <Link to="/history" className="flex items-center gap-3 px-4 py-3 rounded-lg bg-primary/10 text-primary transition-all border-l-4 border-primary">
-                            <span className="material-icons">history</span>
-                            <span className="font-medium">Order History</span>
-                        </Link>
-                        <Link to="/marketplace" className="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-500 hover:bg-primary/10 hover:text-primary transition-all">
-                            <span className="material-icons">inventory_2</span>
-                            <span className="font-medium">Marketplace</span>
-                        </Link>
-                        <Link to="/ai-detection" className="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-500 hover:bg-primary/10 hover:text-primary transition-all">
-                            <span className="material-icons">analytics</span>
-                            <span className="font-medium">AI Insights</span>
-                        </Link>
-                    </nav>
-                    <div className="p-6 border-t border-slate-200 dark:border-slate-800">
-                        <div className="flex items-center gap-3 p-2 bg-slate-50 dark:bg-slate-900 rounded-xl">
-                            <img className="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmQ8JMbM0DRFYWwo6OVQJNjCBOhNbUnt51lkgiKjboTJNBlADTpJZfJkLusVVrGFjZwEYt6Xy0cAccwhUc6gBEdN79fBvBhiroBYuwEnZwwFsAKGOFmjCq66HY6ta9CJv5kGKLgKFe0xi0RhkYBuTMgyAKd4T3bB6-1xW5TfYqb1mhM6vwA-5Ne9O5HMRL6KvKq7mx29xO1ANLfX_vxgBLWCYBthS5oSDZcELaUeV2046tFMgyHUv75LXESlGLMZ3f06E9_nZ3sij5"/>
-                            <div className="overflow-hidden">
-                                <p className="text-sm font-semibold truncate">Captain Seafood</p>
-                                <p className="text-xs text-slate-500 truncate">Premium Member</p>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
+                <Sidebar />
 
                 {/* Main Content */}
-                <main className="flex-1 flex flex-col overflow-hidden">
+                <main className="flex-1 flex flex-col lg:ml-64 w-full overflow-hidden">
                     {/* Header */}
                     <header className="bg-white dark:bg-background-dark border-b border-slate-200 dark:border-slate-800 h-20 flex items-center justify-between px-8">
                         <div>
