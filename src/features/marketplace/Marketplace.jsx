@@ -255,12 +255,6 @@ const Marketplace = () => {
                     </div>
                 </footer>
             </main>
-
-            {/* Contextual FAB (Only on Home/Market as per instructions) */}
-            <button className="fixed bottom-8 right-8 w-14 h-14 bg-teal-500 text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-105 transition-transform z-50 group">
-                <span className="material-symbols-outlined text-2xl">add</span>
-                <span className="absolute right-16 bg-slate-800 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Đăng tin mới</span>
-            </button>
         </div>
     );
 };
