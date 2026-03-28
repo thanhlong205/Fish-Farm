@@ -19,7 +19,7 @@ const OrderHistory = () => {
                         </div>
                         <div className="flex items-center gap-4">
                             <button className="bg-primary text-white px-5 py-2.5 rounded-lg font-semibold flex items-center gap-2 hover:opacity-90 transition-all shadow-lg shadow-primary/20">
-                                <span className="material-icons text-sm">file_download</span>
+                     
                                 Export History
                             </button>
                             <button className="p-2.5 border border-slate-200 dark:border-slate-800 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-900 transition-all">
@@ -32,8 +32,8 @@ const OrderHistory = () => {
                     <div className="px-8 py-6 bg-slate-50/50 dark:bg-slate-900/20 border-b border-slate-200 dark:border-slate-800">
                         <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
                             <div className="relative w-full md:w-96">
-                                <span className="material-icons absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
-                                <input className="w-full pl-10 pr-4 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Search Transaction ID, Product or Vendor..." type="text"/>
+                                
+                                <input className="w-full  bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Search Transaction ID, Product or Vendor..." type="text"/>
                             </div>
                             <div className="flex gap-3 w-full md:w-auto">
                                 <select className="px-4 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl outline-none text-sm font-medium">
@@ -98,11 +98,11 @@ const OrderHistory = () => {
                                 {/* Action Menu */}
                                 <div className="flex md:flex-col gap-2 justify-center border-t md:border-t-0 md:border-l border-slate-100 dark:border-slate-800 pt-4 md:pt-0 md:pl-6">
                                     <button className="flex-1 md:flex-none p-2 rounded-lg bg-slate-50 dark:bg-slate-800 hover:bg-primary/10 hover:text-primary transition-all text-slate-600 group">
-                                        <span className="material-icons text-xl group-hover:scale-110 transition-transform">visibility</span>
+                                        {/* <span className="material-icons text-xl group-hover:scale-110 transition-transform">visibility</span> */}
                                         <span className="block text-[10px] font-bold mt-0.5">Evidence</span>
                                     </button>
                                     <button className="flex-1 md:flex-none p-2 rounded-lg bg-slate-50 dark:bg-slate-800 hover:bg-primary/10 hover:text-primary transition-all text-slate-600 group">
-                                        <span className="material-icons text-xl group-hover:scale-110 transition-transform">receipt_long</span>
+                                        {/* <span className="material-icons text-xl group-hover:scale-110 transition-transform">receipt_long</span> */}
                                         <span className="block text-[10px] font-bold mt-0.5">Receipt</span>
                                     </button>
                                 </div>
@@ -146,11 +146,11 @@ const OrderHistory = () => {
                                 </div>
                                 <div className="flex md:flex-col gap-2 justify-center border-t md:border-t-0 md:border-l border-slate-100 dark:border-slate-800 pt-4 md:pt-0 md:pl-6">
                                     <button className="flex-1 md:flex-none p-2 rounded-lg bg-slate-50 dark:bg-slate-800 hover:bg-primary/10 hover:text-primary transition-all text-slate-600 group">
-                                        <span className="material-icons text-xl group-hover:scale-110 transition-transform">visibility</span>
+                                        {/* <span className="material-icons text-xl group-hover:scale-110 transition-transform">visibility</span> */}
                                         <span className="block text-[10px] font-bold mt-0.5">Evidence</span>
                                     </button>
                                     <button className="flex-1 md:flex-none p-2 rounded-lg bg-slate-50 dark:bg-slate-800 hover:bg-primary/10 hover:text-primary transition-all text-slate-600 group">
-                                        <span className="material-icons text-xl group-hover:scale-110 transition-transform">receipt_long</span>
+                                        {/* <span className="material-icons text-xl group-hover:scale-110 transition-transform">receipt_long</span> */}
                                         <span className="block text-[10px] font-bold mt-0.5">Receipt</span>
                                     </button>
                                 </div>
@@ -194,11 +194,11 @@ const OrderHistory = () => {
                                 </div>
                                 <div className="flex md:flex-col gap-2 justify-center border-t md:border-t-0 md:border-l border-slate-100 dark:border-slate-800 pt-4 md:pt-0 md:pl-6">
                                     <button className="flex-1 md:flex-none p-2 rounded-lg bg-slate-50 dark:bg-slate-800 hover:bg-primary/10 hover:text-primary transition-all text-slate-600 group">
-                                        <span className="material-icons text-xl group-hover:scale-110 transition-transform">visibility</span>
+                                        {/* <span className="material-icons text-xl group-hover:scale-110 transition-transform">visibility</span> */}
                                         <span className="block text-[10px] font-bold mt-0.5">Evidence</span>
                                     </button>
                                     <button className="flex-1 md:flex-none p-2 rounded-lg bg-slate-50 dark:bg-slate-800 hover:bg-primary/10 hover:text-primary transition-all text-slate-600 group">
-                                        <span className="material-icons text-xl group-hover:scale-110 transition-transform">receipt_long</span>
+                                        {/* <span className="material-icons text-xl group-hover:scale-110 transition-transform">receipt_long</span> */}
                                         <span className="block text-[10px] font-bold mt-0.5">Receipt</span>
                                     </button>
                                 </div>
@@ -209,17 +209,12 @@ const OrderHistory = () => {
                         <div className="mt-8 flex items-center justify-between border-t border-slate-200 dark:border-slate-800 pt-8 pb-12">
                             <p className="text-sm text-slate-500">Showing 1 to 3 of 124 transactions</p>
                             <div className="flex gap-2">
-                                <button className="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 hover:bg-white transition-all text-slate-400">
-                                    <span className="material-icons">chevron_left</span>
-                                </button>
+                           
                                 <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white font-bold">1</button>
                                 <button className="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 hover:bg-white transition-all">2</button>
                                 <button className="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 hover:bg-white transition-all">3</button>
                                 <span className="px-2 self-end pb-2">...</span>
                                 <button className="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 hover:bg-white transition-all">42</button>
-                                <button className="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 hover:bg-white transition-all text-slate-400">
-                                    <span className="material-icons">chevron_right</span>
-                                </button>
                             </div>
                         </div>
                     </div>
