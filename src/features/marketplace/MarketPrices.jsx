@@ -50,7 +50,7 @@ const MarketPrices = () => {
                                     <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Live Market Feed</span>
                                 </div>
                                 <h2 className="text-3xl font-extrabold tracking-tight text-slate-800">Thị Trường Giá Thủy Sản Toàn Cầu</h2>
-                                <p className="text-sm text-slate-500">Cập nhật lần cuối: <span className="font-mono">14:24:02 (GMT+7)</span> • 12 tháng 10, 2024</p>
+                                <p className="text-sm text-slate-500">Cập nhật lần cuối: <span className="font-mono">14:24:02 (GMT+7)</span> • 12 tháng 1, 2026</p>
                             </div>
                             <div className="flex gap-3">
                                 <button className="flex items-center gap-2 px-4 py-2 bg-white border border-primary/10 rounded-lg text-sm font-semibold text-slate-700 shadow-sm hover:bg-primary/5 transition-colors">
