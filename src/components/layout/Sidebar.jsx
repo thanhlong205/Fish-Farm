@@ -4,7 +4,6 @@ import { Link, useLocation } from 'react-router-dom';
 const Sidebar = () => {
     const location = useLocation();
     
-    // Check if the current route matches the nav item route
     const checkActive = (path) => {
         if (path === '/' && location.pathname !== '/') return false;
         return location.pathname.startsWith(path);
@@ -16,7 +15,6 @@ const Sidebar = () => {
         { path: '/marketplace', label: 'Marketplace', icon: 'storefront' },
         { path: '/ai-detection', label: 'Analytics', icon: 'insights' },
         { path: '/orders', label: 'Logistics', icon: 'local_shipping' },
-        { path: '/inventory', label: 'Inventory', icon: 'inventory_2' },
         { path: '/wallet', label: 'Wallet', icon: 'account_balance_wallet' },
         { path: '/chat', label: 'AI Chat', icon: 'chat' },
         { path: '/settings', label: 'Settings', icon: 'settings' },
